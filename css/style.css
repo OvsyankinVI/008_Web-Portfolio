@@ -1,0 +1,32 @@
+/* Normalize */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+h1 {
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+/* Variables */
+:root {
+    --color-green: #01996D;
+}
+/* Overall Width */
+.container {
+    max-width: 1386px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Nav */
+
+/* Header */
+
+
