@@ -4,25 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="shortcut icon" href="img/logo__ovi-b.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;900&family=Noto+Sans+Georgian:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>OVI-W</title>
 </head>
 <body>
+
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#main" class="sidenav-close"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#services" class="sidenav-close"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#portfolio" class="sidenav-close"><i class="material-icons">done</i>Портфолио</a></li>
+        <li><a href="#footer" class="sidenav-close"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+    </ul>
+    
+    <div id="modal1" class="modal">
+        <p class="modal-p">Оставьте свои контактные данные и получите бесплатную консультацию</p>
+        <div class="modal-content">
+          <h5>ФИО</h5>
+          <input type="text">
+        </div>
+        <div class="modal-content">
+          <h5>Mail</h5>
+          <input type="text" placeholder="text@youremail.com">
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
+        </div>
+    </div>
+
     <header id="header">
         <div class="container">
             <div class="header__flex">
+                <div class="header__flex-burger sidenav-trigger" data-target="slide-out">
+                    <div class="header__flex-burger-line"></div>
+                    <div class="header__flex-burger-line"></div>
+                    <div class="header__flex-burger-line"></div>
+                </div>
                 <a href="#header" class=""><img src="img/logo__ovi-b.png" class="header__flex-logo"></a>
                 <div class="header__flex-nav">
                     <a href="#main" class="header__flex-nav-a">Главная</a>
                     <a href="#services" class="header__flex-nav-a">Услуги</a>
                     <a href="#portfolio" class="header__flex-nav-a">Портфолио</a>
-                    <a href="#main" class="header__flex-nav-a">Контакты</a>
+                    <a href="#footer" class="header__flex-nav-a">Контакты</a>
                 </div>
-                <button class="header__flex-button">Заказ</button>
+                <a class="header__flex-button modal-trigger" href="#modal1">Заказ</a>
+                <a class="email modal-trigger" href="#modal1"><i class="material-icons">mail</i></a>
             </div>
         </div>
     </header>
@@ -32,11 +65,12 @@
             <h1 class="main-h">Кроссбраузерная, адаптивная вёрстка сайтов по вашему дизайн-макету в Figma или Photoshop</h1>
         </div>
     </section>
-    <img src="img/Main-bg.png" alt="" class="main-bg">
+    <img class="img-1" src="img/Main-bg-big.png">
+    <img class="img-2" src="img/Main-bg.png">
 
     <section class="services" id="services">
         <div class="container">
-            <h1>ghjgjhghjghjgh</h1>
+
         </div>
     </section>
 
@@ -52,6 +86,8 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
