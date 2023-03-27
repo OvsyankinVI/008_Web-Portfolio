@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/itc-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="shortcut icon" href="img/logo__ovi-b.png" type="image/x-icon">
@@ -13,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>OVI-W</title>
 </head>
+
 <body>
 
     <ul id="slide-out" class="sidenav">
@@ -20,22 +24,24 @@
         <li><a href="#services" class="sidenav-close"><i class="material-icons">grade</i>Услуги</a></li>
         <li><a href="#portfolio" class="sidenav-close"><i class="material-icons">done</i>Портфолио</a></li>
         <li><a href="#footer" class="sidenav-close"><i class="material-icons">phone</i>Контакты</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+            <div class="divider"></div>
+        </li>
         <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
     </ul>
-    
+
     <div id="modal1" class="modal">
         <p class="modal-p">Оставьте свои контактные данные и получите бесплатную консультацию</p>
         <div class="modal-content">
-          <h5>ФИО</h5>
-          <input type="text">
+            <h5>ФИО</h5>
+            <input type="text">
         </div>
         <div class="modal-content">
-          <h5>Mail</h5>
-          <input type="text" placeholder="text@youremail.com">
+            <h5>Mail</h5>
+            <input type="text" placeholder="text@youremail.com">
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
         </div>
     </div>
 
@@ -62,7 +68,8 @@
 
     <section class="main" id="main">
         <div class="container">
-            <h1 class="main-h">Кроссбраузерная, адаптивная вёрстка сайтов по вашему дизайн-макету в Figma или Photoshop</h1>
+            <h1 class="main-h">Кроссбраузерная, адаптивная вёрстка сайтов по вашему дизайн-макету в Figma или Photoshop
+            </h1>
         </div>
     </section>
     <img class="img-1" src="img/Main-bg-big.png">
@@ -70,24 +77,95 @@
 
     <section class="services" id="services">
         <div class="container">
-
-        </div>
+            <h1 class="services__h">Услуги</h1>
+            <div class="services__line"></div>
+            <div class="services__grid">
+                <div class="services__grid-item item-1">
+                    <div class="services__grid-item-up">
+                        <h2 class="services__grid-item-h2">Эконом</h2>
+                        <p class="services__grid-item-p">Одностраничный сайт</p>
+                        <div class="services__grid-item-line"></div>
+                        <h3 class="services__grid-item-h3">не более 2000 px в высоту</h3>
+                        <ul class="services__grid-item-ul">
+                            <li><i class="material-icons pos minimize">close</i>Сложная вёрстка</li>
+                            <li><i class="material-icons pos minimize">close</i>Навигация</li>
+                            <li><i class="material-icons pos minimize">close</i>Форма обратной связи</li>
+                            <li><i class="material-icons pos minimize">close</i>JS-эффекты</li>
+                            <li><i class="material-icons pos">add</i>Корректировка шаблона</li>
+                            <li class="last_li">Количество страниц - 1</li>
+                            <li>Срок - 2 дня</li>
+                        </ul>
+                    </div>
+                    <div class="services__grid-item-down">
+                        <h3 class="services__grid-item-price">50$</h3>
+                        <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
+                            href="#modal1">Бесплатная консультация</a>
+                    </div>
+                </div>
+                <div class="services__grid-item item-2">
+                    <div class="services__grid-item-up">
+                        <h2 class="services__grid-item-h2">Стандарт</h2>
+                        <p class="services__grid-item-p">Многофункциональный сайт</p>
+                        <div class="services__grid-item-line"></div>
+                        <h3 class="services__grid-item-h3">не более 4000 px в высоту</h3>
+                        <ul class="services__grid-item-ul">
+                            <li><i class="material-icons pos minimize">close</i>Сложная вёрстка</li>
+                            <li><i class="material-icons pos">add</i>Навигация</li>
+                            <li><i class="material-icons pos">add</i>Форма обратной связи</li>
+                            <li><i class="material-icons pos">add</i>JS-эффекты</li>
+                            <li><i class="material-icons pos">add</i>Корректировка шаблона</li>
+                            <li class="last_li">Количество страниц - 1</li>
+                            <li>Срок - 5 дня</li>
+                        </ul>
+                    </div>
+                    <div class="services__grid-item-down">
+                        <h3 class="services__grid-item-price">100$</h3>
+                        <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
+                            href="#modal1">Бесплатная консультация</a>
+                    </div>
+                </div>
+                <div class="services__grid-item item-3">
+                    <div class="services__grid-item-up">
+                        <h2 class="services__grid-item-h2">Бизнес</h2>
+                        <p class="services__grid-item-p">Большой, многофункциональный сайт</p>
+                        <div class="services__grid-item-line"></div>
+                        <h3 class="services__grid-item-h3">не более 6000 px в высоту</h3>
+                        <ul class="services__grid-item-ul">
+                            <li><i class="material-icons pos">add</i>Сложная вёрстка</li>
+                            <li><i class="material-icons pos">add</i>Навигация</li>
+                            <li><i class="material-icons pos">add</i>Форма обратной связи</li>
+                            <li><i class="material-icons pos">add</i>JS-эффекты</li>
+                            <li><i class="material-icons pos">add</i>Корректировка шаблона</li>
+                            <li class="last_li">Количество страниц - 8</li>
+                            <li>Срок - 8 дней</li>
+                        </ul>
+                    </div>
+                    <div class="services__grid-item-down">
+                        <h3 class="services__grid-item-price">200$</h3>
+                        <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
+                            href="#modal1">Бесплатная консультация</a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class="portfolio" id="portfolio">
         <div class="container">
-            
+
         </div>
     </section>
 
     <footer id="footer">
         <div class="container">
-            
+
         </div>
     </footer>
 
+    <script src="/assets/js/itc-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
