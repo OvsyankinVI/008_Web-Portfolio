@@ -12,13 +12,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  function onHeader(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('header-bg');
+      }
+    });
+  }
   
   let options = {
     threshold: [0.5] };
   let observer = new IntersectionObserver(onEntry, options);
+  let header = new IntersectionObserver(onHeader, options);
   let elements_1 = document.querySelectorAll('.item-1');
   let elements_2 = document.querySelectorAll('.item-2');
   let elements_3 = document.querySelectorAll('.item-3');
+  let header_bg = document.querySelectorAll('.header__flex');
   
   for (let elm of elements_1) {
     observer.observe(elm);
@@ -28,4 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   for (let elm of elements_3) {
     observer.observe(elm);
+  }
+  for (let elm of header_bg) {
+    header.observe(elm);
   }
