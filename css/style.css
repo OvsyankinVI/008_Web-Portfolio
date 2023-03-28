@@ -86,6 +86,7 @@ body, h1, h2, h3, h4, h5, p {
 }
 .sidenav {
     width: 230px;
+    background-color: #ffffffd8;
 }
 @media screen and (max-width: 900px) {
     .header__flex-nav {
@@ -150,7 +151,7 @@ body, h1, h2, h3, h4, h5, p {
     }
     .main_h {
         font-size: 50px;
-        margin: 245px auto 0 auto;
+        margin: 290px auto 0 auto;
         max-width: 300px;
         width: 100%;
         padding: 20px 0;
