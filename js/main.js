@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var modal = document.querySelectorAll('.modal');
     var instances_modal = M.Modal.init(modal);
   });
-
   function onEntry(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-
   function onHeader(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
@@ -20,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-  
   let options = {
     threshold: [0.5] };
   let observer = new IntersectionObserver(onEntry, options);

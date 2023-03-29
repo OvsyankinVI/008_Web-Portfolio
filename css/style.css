@@ -72,14 +72,22 @@ body, h1, h2, h3, h4, h5, p {
 .header__flex-burger-line:last-child {
     width: 20px;
     height: 2px;
-    margin-bottom: 0px;
+    margin-bottom: 6px;
+}
+.modal {
+    border-radius: 10px;
+    background-color: #fffffffe;
+}
+.modal .modal-footer {
+    background-color: #e3e3e3fe;
+    margin: 0 auto;
+    text-align: center;
 }
 .modal-p {
     text-align: center;
-    font-size: 1.64rem;
+    font-size: 1.5rem;
     width: 90%;
     margin: 20px auto 0 auto;
-    text-shadow: 5px 5px 5px rgba(174,174,174,0.58);
 }
 .drag-target {
     width: 10px;
@@ -102,11 +110,10 @@ body, h1, h2, h3, h4, h5, p {
         padding: 5px 8px 0 26px;
     }
     .header__flex-logo {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
-
 /* Main */
 .main {
     background-image: url(../img/main-bg.jpg);   
@@ -123,7 +130,7 @@ body, h1, h2, h3, h4, h5, p {
     text-align: center;
     font-size: 80px;
     text-transform: uppercase;
-    margin: 270px auto 0 auto;
+    margin: 280px auto 0 auto;
     width: 700px;
     padding: 50px 0;
     border: 4px solid var(--color-green);
@@ -147,12 +154,11 @@ body, h1, h2, h3, h4, h5, p {
         background-color: #efefef7e;
         margin: 179px auto 0 auto;
     }
-
 }    
 @media screen and (max-width: 650px) {
     .main {
         background-image: url(../img/main-bg-mobile.JPG);
-        height: 666px;
+        height: 677px;
     }
     .main_h {
         font-size: 50px;
@@ -171,7 +177,7 @@ body, h1, h2, h3, h4, h5, p {
 
 .services {
     position: relative;
-    top: -8px;
+    top: -48px;
     background-color: #fff;
     border: none;
 }
@@ -182,7 +188,7 @@ body, h1, h2, h3, h4, h5, p {
     line-height: 80px;
     color: #000;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 .services__line {
     background-color: var(--color-green);
@@ -290,11 +296,13 @@ body, h1, h2, h3, h4, h5, p {
 .itc-slider {
     display: none;
 }
+ul:not(.browser-default) {
+    padding-left: 20px;
+}
 @media screen and (max-width: 1150px) {
     .services__h {
         font-size: 38px;
         line-height: 50px;
-        padding-top: 45px;
     }
     .services__line {
     background-color: var(--color-green);
@@ -311,4 +319,20 @@ body, h1, h2, h3, h4, h5, p {
     .services__grid {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+/* parallax */
+.parallax {
+    background-image: url(../img/Paralax-img.png);
+    height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+/* portfolio */
+.portfolio {
+    height: 800px;
 }
