@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems);
     var modal = document.querySelectorAll('.modal');
     var instances_modal = M.Modal.init(modal);
-  });
+  }); 
   function onEntry(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {

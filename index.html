@@ -14,33 +14,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>OVI-W</title>
+    <title>OVI_Web</title>
 </head>
-
+ 
 <body>
     <ul id="slide-out" class="sidenav">
-        <li><a href="#main" class="sidenav-close"><i class="material-icons">home</i>Главная</a></li>
-        <li><a href="#services" class="sidenav-close"><i class="material-icons">grade</i>Услуги</a></li>
-        <li><a href="#portfolio" class="sidenav-close"><i class="material-icons">done</i>Портфолио</a></li>
-        <li><a href="#footer" class="sidenav-close"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><a href="#main" class="sidenav-close"><i class="material-icons">home</i>Main</a></li>
+        <li><a href="#services" class="sidenav-close"><i class="material-icons">grade</i>Services</a></li>
+        <li><a href="#portfolio" class="sidenav-close"><i class="material-icons">done</i>Portfolio</a></li>
+        <li><a href="#footer" class="sidenav-close"><i class="material-icons">phone</i>Contacts</a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Close</a></li>
     </ul>
 
-    <div id="modal1" class="modal">
-        <p class="modal-p">Оставьте свои контактные данные и получите бесплатную консультацию</p>
+    <form action="mail.php" method="POST" id="modal1" class="modal">
+        <p class="modal-p">Leave your contact information and get a free consultation</p>
         <div class="modal-content">
-            <input type="text" placeholder="ФИО">
+            <input type="text" name="user_name" placeholder="Full Name">
         </div>
         <div class="modal-content">
-            <input type="text" placeholder="text@youremail.com">
+            <input type="text" name="user_email" placeholder="text@youremail.com">
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
+            <a href="#!" type="submit" class="modal-close waves-effect waves-green btn-flat">Send</a>
         </div>
-    </div>
+    </form>
 
     <section class="header" id="header">
         <div class="container header">
@@ -52,10 +52,10 @@
                 </div>
                 <a href="#main" class=""><img src="img/logo__ovi-b.png" class="header__flex-logo"></a>
                 <div class="header__flex-nav">
-                    <a href="#main" class="header__flex-nav-a">Главная</a>
-                    <a href="#services" class="header__flex-nav-a">Услуги</a>
-                    <a href="#portfolio" class="header__flex-nav-a">Портфолио</a>
-                    <a href="#footer" class="header__flex-nav-a">Контакты</a>
+                    <a href="#main" class="header__flex-nav-a">Main</a>
+                    <a href="#services" class="header__flex-nav-a">Services</a>
+                    <a href="#portfolio" class="header__flex-nav-a">Portfolio</a>
+                    <a href="#footer" class="header__flex-nav-a">Contacts</a>
                 </div>
             </div>
         </div>
@@ -71,79 +71,78 @@
 
     <section class="services" id="services">
         <div class="container">
-            <h1 class="services__h">Услуги</h1>
+            <h1 class="services__h">Services</h1>
             <div class="services__line"></div>
             <div class="services__grid">
                 <div class="services__grid-item item-1">
                     <div class="services__grid-item-up">
-                        <h2 class="services__grid-item-h2">Эконом</h2>
-                        <p class="services__grid-item-p">Одностраничный сайт</p>
+                        <h2 class="services__grid-item-h2">Min</h2>
+                        <p class="services__grid-item-p">Single-page website</p>
                         <div class="services__grid-item-line"></div>
-                        <h3 class="services__grid-item-h3">не более 2000 px в высоту</h3>
+                        <h3 class="services__grid-item-h3">max 2000 px in height</h3>
                         <ul class="services__grid-item-ul">
-                            <li><i class="material-icons pos">add</i>Корректировка шаблона</li>
-                            <li class="last_li">Количество страниц - 1</li>
-                            <li>Срок - 2 дня</li>
+                            <li><i class="material-icons pos">add</i>Template correction</li>
+                            <li class="last_li">Number of pages - 1</li>
+                            <li>Deadline - 2 days</li>
                         </ul>
                     </div>
                     <div class="services__grid-item-down">
                         <h3 class="services__grid-item-price">50$</h3>
                         <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
-                            href="#modal1">Бесплатная консультация</a>
+                            href="#modal1">Free consultation</a>
                     </div>
                 </div>
                 <div class="services__grid-item item-2">
                     <div class="services__grid-item-up">
-                        <h2 class="services__grid-item-h2">Стандарт</h2>
-                        <p class="services__grid-item-p">Многофункциональный сайт</p>
+                        <h2 class="services__grid-item-h2">Standard</h2>
+                        <p class="services__grid-item-p">Multifunctional website</p>
                         <div class="services__grid-item-line"></div>
-                        <h3 class="services__grid-item-h3">не более 4000 px в высоту</h3>
+                        <h3 class="services__grid-item-h3">max 4000 px in height</h3>
                         <ul class="services__grid-item-ul">
-                            <li><i class="material-icons pos">add</i>Навигация</li>
-                            <li><i class="material-icons pos">add</i>Форма обратной связи</li>
-                            <li><i class="material-icons pos">add</i>JS-эффекты</li>
-                            <li><i class="material-icons pos">add</i>Корректировка шаблона</li>
-                            <li class="last_li">Количество страниц - 1</li>
-                            <li>Срок - 5 дней</li>
+                            <li><i class="material-icons pos">add</i>Navigation</li>
+                            <li><i class="material-icons pos">add</i>Feedback form</li>
+                            <li><i class="material-icons pos">add</i>JS-effects</li>
+                            <li><i class="material-icons pos">add</i>Template correction</li>
+                            <li class="last_li">Number of pages - 1</li>
+                            <li>Deadline - 5 days</li>
                         </ul>
                     </div>
                     <div class="services__grid-item-down">
                         <h3 class="services__grid-item-price">100$</h3>
                         <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
-                            href="#modal1">Бесплатная консультация</a>
+                            href="#modal1">Free consultation</a>
                     </div>
                 </div>
                 <div class="services__grid-item item-3">
                     <div class="services__grid-item-up">
-                        <h2 class="services__grid-item-h2">Бизнес</h2>
-                        <p class="services__grid-item-p">Большой, многофункциональный сайт</p>
+                        <h2 class="services__grid-item-h2">Business</h2>
+                        <p class="services__grid-item-p">Large, multifunctional site</p>
                         <div class="services__grid-item-line"></div>
-                        <h3 class="services__grid-item-h3">не более 6000 px в высоту</h3>
+                        <h3 class="services__grid-item-h3">max 6000 px in height</h3>
                         <ul class="services__grid-item-ul">
-                            <li><i class="material-icons pos">add</i>Сложная вёрстка</li>
-                            <li><i class="material-icons pos">add</i>Навигация</li>
-                            <li><i class="material-icons pos">add</i>Форма обратной связи</li>
-                            <li><i class="material-icons pos">add</i>JS-эффекты</li>
-                            <li><i class="material-icons pos">add</i>Корректировка шаблона</li>
-                            <li class="last_li">Количество страниц - 5</li>
-                            <li>Срок - 10 дней</li>
+                            <li><i class="material-icons pos">add</i>Complicated layout</li>
+                            <li><i class="material-icons pos">add</i>Navigation</li>
+                            <li><i class="material-icons pos">add</i>Feedback form</li>
+                            <li><i class="material-icons pos">add</i>JS-effects</li>
+                            <li><i class="material-icons pos">add</i>Template correction</li>
+                            <li class="last_li">Number of pages - 5</li>
+                            <li>Deadline - 5 days</li>
                         </ul>
                     </div>
                     <div class="services__grid-item-down">
                         <h3 class="services__grid-item-price">300$</h3>
                         <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
-                            href="#modal1">Бесплатная консультация</a>
+                            href="#modal1">Free consultation</a>
                     </div>
                 </div>
             </div>
             <div class="services__documentation">
-                <h2 class="services__documentation-h">Что требуется от вас?</h2>
+                <h2 class="services__documentation-h">What's required of you?</h2>
                 <ul class="services__grid-item-ul">
-                    <li> - оставить заявку на бесплатную консультацию или описать вашу задачу в почте/telegram;</li>
-                    <li> - прислать мне ваш дизайн-макет в Figma или Photoshop;</li>
-                    <li> - подготовить техническое задание и обсудить его со мной на видео конференции;</li>
-                    <li> - заключить контракт;</li>
-                    <li> - получить свой сайт точно в срок.</li>
+                    <li> - send a request for a free consultation or describe your requirements in the mail/telegram;</li>
+                    <li> - formulate the technical requirements accurately.;</li>
+                    <li> - send me your design layout in Figma or Photoshop;</li>
+                    <li> - get a high-quality, adaptive website just in time.</li>
                 </ul>
             </div>
     </section>
@@ -152,56 +151,56 @@
 
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h1 class="services__h">Портфолио</h1>
+            <h1 class="services__h">Portfolio</h1>
             <div class="services__line"></div>
             <div class="portfolio__grig">
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_02_VIP-Building/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-1.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">VIP-Building</h2>
-                    <p class="portfolio__grid-item-p">Строительная компания</p>
+                    <p class="portfolio__grid-item-p">Building company</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_03_Konstruct/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-2.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">Konstruct</h2>
-                    <p class="portfolio__grid-item-p">Управляющая компания</p>
+                    <p class="portfolio__grid-item-p">Managing company</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_04_Alivio/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-3.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">Alivio</h2>
-                    <p class="portfolio__grid-item-p">Ваш онлайн дневник</p>
+                    <p class="portfolio__grid-item-p">Online diary</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_05_Britlex/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-4.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">Britlex</h2>
-                    <p class="portfolio__grid-item-p">Курсы английского языка</p>
+                    <p class="portfolio__grid-item-p">English language courses</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_06_Archiweb/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-5.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">ArchiWeb</h2>
-                    <p class="portfolio__grid-item-p">Архитектурная компания</p>
+                    <p class="portfolio__grid-item-p">Architecture company</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_07_CloudBudget/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-6.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">CloudBudgetT</h2>
-                    <p class="portfolio__grid-item-p">Управление бюджетом</p>
+                    <p class="portfolio__grid-item-p">Budget management</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_08_Dae/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-7.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">Dae</h2>
-                    <p class="portfolio__grid-item-p">Интернет магазин косметики</p>
+                    <p class="portfolio__grid-item-p">Online cosmetics store</p>
                 </div>
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_01_Type-of-temperament/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-8.png" class="portfolio__grid-item-img"></a>
                     <h2 class="portfolio__grid-item-h2">Type of temperament </h2>
-                    <p class="portfolio__grid-item-p">Онлайн тест на определение темперамента</p>
+                    <p class="portfolio__grid-item-p">Temperament test</p>
                 </div>
             </div>
         </div>
