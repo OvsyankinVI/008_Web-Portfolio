@@ -31,7 +31,8 @@ $mail->Subject = 'New client OVI  Web';
 $mail->Body    = '' .$name . ' оставил заявку.<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
-if($mail->send()) {
-    location.reload();
+if(!$mail->send()) {
+    echo 'Error';
 }
+
 ?>
