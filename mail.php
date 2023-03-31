@@ -18,7 +18,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('ovi-test@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('717ovsyankin@gmail.com');     // Кому будет уходить письмо 
+$mail->addAddress('ovsyankin717@mail.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -27,7 +27,7 @@ $mail->addAddress('717ovsyankin@gmail.com');     // Кому будет уход
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'New client с OVI  Web';
+$mail->Subject = 'New client OVI  Web';
 $mail->Body    = '' .$name . ' оставил заявку.<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
