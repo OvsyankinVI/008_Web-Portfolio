@@ -8,7 +8,7 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
-} 
+}
 body, h1, h2, h3, h4, h5, p {
     font-family: sans-serif;
     margin: 0;
@@ -53,12 +53,15 @@ body, h1, h2, h3, h4, h5, p {
     text-decoration: none;
     padding-right: 30px;
     font-size: 18px;
+    transition: all 1s;
 }
 .header__flex-nav-a:last-child {
     padding-right: 0px;
 }
 .header__flex-nav-a:hover {
+    font-size: 20px;
     text-shadow: 5px 5px 5px rgb(156, 156, 156);
+    transition: all 1s;
 }
 .header__flex-burger {
     display: none;
@@ -81,6 +84,7 @@ body, h1, h2, h3, h4, h5, p {
 .modal .modal-footer {
     background-color: #e3e3e3fe;
     margin: 0 auto;
+    height: 48px;
     text-align: center;
 }
 .modal-p {
@@ -215,8 +219,8 @@ body, h1, h2, h3, h4, h5, p {
 
 .services__grid-item {
     width: 300px;
-    height: 460px;
-    padding: 20px 10px;
+    height: 500px;
+    padding: 15px;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -258,7 +262,7 @@ body, h1, h2, h3, h4, h5, p {
 .services__grid-item-price {
     font-size: 34px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 22px;
 }
 .services__grid-item-button {
     width: 250px;
@@ -274,7 +278,6 @@ body, h1, h2, h3, h4, h5, p {
     margin: 30px auto 0 auto;
     box-shadow: none;
     text-transform: none;
-    text-transform: uppercase;
 }
 .services__documentation {
     margin-top: 50px;
@@ -294,6 +297,7 @@ body, h1, h2, h3, h4, h5, p {
 .last_li {
     padding-top: 12px;
 }
+
 .services__grid-item-button:hover {
     border: none;
     background-color: #23c62b71;
@@ -353,10 +357,23 @@ ul:not(.browser-default) {
     width: 300px;
     padding: 10px;
     height: 240px;
+    border-radius: 4%;
+    transition: all 1.5s;
+}
+.portfolio__grid-item:hover {
+    background-color: #dedede7f;
+    transition: all 1s;
 }
 .portfolio__grid-item-img {
     width: 278px;
     height: 150px;
+    transition: all 1.5s;
+}
+.portfolio__grid-item-img:hover {
+    width: 282px;
+    height: 154px;
+    margin-bottom: 6px;
+    transition: all 1s;
 }
 .portfolio__grid-item-h2 {
     width: 100%;
@@ -395,10 +412,24 @@ footer {
     padding: 0px 25px;
     border-radius: 3px;
     margin: 20px 30px;
+    transition: all 1s;
 }
 .footer__a:hover {
-    background-color: #f1f1f1;
+    background-color: #eeeeee;
+    top: -1px;
+    transition: all 1s;
 }
 .material-icons {
     top: 3px;
 } 
+.g-form__input-wrapper_hidden {
+    display: none;
+}
+.modal .modal-content,.modal .modal-footer {
+    padding: 0px;
+}
+.g-form__input-wrapper {
+    border: none;
+    max-width: 400px;
+    margin: 0 auto;
+}

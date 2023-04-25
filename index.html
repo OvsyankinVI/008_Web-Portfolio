@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/itc-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
@@ -29,22 +28,47 @@
         <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Close</a></li>
     </ul>
 
-    <form action="mail.php" method="POST" id="modal1" class="modal">
+    <div id="modal1" class="modal">
         <p class="modal-p">Leave your contact information and get a free consultation</p>
-        <div class="modal-content">
-            <input type="text" name="user_name" placeholder="Full Name">
-        </div>
-        <div class="modal-content">
-            <input type="text" name="user_email" placeholder="text@youremail.com">
-        </div>
-        <div class="modal-footer">
-            <button href="#!" type="submit" class="modal-close waves-effect waves-green btn-flat">Send</button>
-        </div>
-    </form>
+        <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+
+            <div class="g-form__inputs">
+                <div class="modal-content">
+                    <fieldset class="g-form__input-wrapper">
+                        <input class="g-form__input g-form__input_name" id="name" name="Имя"
+                            placeholder="Enter your name" required>
+                    </fieldset>
+                </div>
+
+                <div class="modal-content">
+                    <fieldset class="g-form__input-wrapper">
+                        <input class="g-form__input g-form__input_tel" type="number" id="tel" name="Телефон"
+                            placeholder="Enter your phone number">
+                    </fieldset>
+                </div>
+
+                <div class="modal-content">
+                    <fieldset class="g-form__input-wrapper">
+                        <input id="email" name="Email" type="email" value="" required placeholder="Enter your email" />
+                    </fieldset>
+                </div>
+
+                <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                    <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+                    <input id="honeypot" type="text" name="honeypot" value="">
+                </fieldset>
+                <div class="modal-footer">
+                    <div class="g-form__button-wrapper">
+                        <button class="g-form__button waves-effect waves-green btn-flat g-form__button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <section class="header" id="header">
         <div class="container header">
-            <div class="header__flex .header-bg">
+            <div class="header__flex header-bg">
                 <div class="header__flex-burger sidenav-trigger" data-target="slide-out">
                     <div class="header__flex-burger-line"></div>
                     <div class="header__flex-burger-line"></div>
@@ -89,8 +113,8 @@
                     <div class="services__grid-item-down">
                         <div class="services__grid-item-line"></div>
                         <h3 class="services__grid-item-price">50$</h3>
-                        <!-- <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
-                            href="#modal1">Free consultation</a> -->
+                        <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
+                            href="#modal1">Free consultation</a>
                     </div>
                 </div>
                 <div class="services__grid-item item-2">
@@ -111,8 +135,8 @@
                     <div class="services__grid-item-down">
                         <div class="services__grid-item-line"></div>
                         <h3 class="services__grid-item-price">100$</h3>
-                        <!-- <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
-                            href="#modal1">Free consultation</a> -->
+                        <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
+                            href="#modal1">Free consultation</a>
                     </div>
                 </div>
                 <div class="services__grid-item item-3">
@@ -134,8 +158,8 @@
                     <div class="services__grid-item-down">
                         <div class="services__grid-item-line"></div>
                         <h3 class="services__grid-item-price">300$</h3>
-                        <!-- <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
-                            href="#modal1">Free consultation</a> -->
+                        <a class="services__grid-item-button modal-trigger waves-effect waves-light btn"
+                            href="#modal1">Free consultation</a>
                     </div>
                 </div>
             </div>
@@ -219,11 +243,11 @@
         </div>
     </footer>
 
-    <script src="/assets/js/itc-slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/google-form.js"></script>
 </body>
 
 </html>
