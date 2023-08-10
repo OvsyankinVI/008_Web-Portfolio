@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="shortcut icon" href="img/logo__ovi-b.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo__ovi-b.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/style.css">
     <title>OVI_Web</title>
 </head>
  
 <body>
     <ul id="slide-out" class="sidenav">
-        <li><a href="#main" class="sidenav-close"><i class="material-icons">home</i>Main</a></li>
-        <li><a href="#services" class="sidenav-close"><i class="material-icons">grade</i>Services</a></li>
+<!--         <li><a href="#main" class="sidenav-close"><i class="material-icons">home</i>Main</a></li> -->
+        <li><a href="#about" class="sidenav-close"><i class="material-icons">grade</i>About</a></li>
         <li><a href="#portfolio" class="sidenav-close"><i class="material-icons">done</i>Portfolio</a></li>
         <li><a href="#footer" class="sidenav-close"><i class="material-icons">phone</i>Contacts</a></li>
         <li>
@@ -76,8 +76,8 @@
                 </div>
                 <a href="#main" class=""><img src="img/logo__ovi-b.png" class="header__flex-logo"></a>
                 <div class="header__flex-nav">
-                    <a href="#main" class="header__flex-nav-a">Main</a>
-                    <a href="#services" class="header__flex-nav-a">Services</a>
+<!--                     <a href="#main" class="header__flex-nav-a">Main</a> -->
+                    <a href="#about" class="header__flex-nav-a">About</a>
                     <a href="#portfolio" class="header__flex-nav-a">Portfolio</a>
                     <a href="#footer" class="header__flex-nav-a">Contacts</a>
                 </div>
@@ -93,7 +93,72 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="parallax prlx">
+        
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h1 class="services__h">About</h1>
+            <div class="services__line"></div>
+            <div class="about__grid">
+                <div class="about__grid-foto">
+                    <img src="img/ovi.jpg" alt="ovi">
+                </div>
+                <div class="about__grid-text">
+                    <div class="swiper about__grid-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p>I am a Frontend Web Developer and most of my time I do Figma or PSD to html/css
+                                    conversions. I build div-based layouts that are interactive, standards-compliant
+                                    XHTML/HTML5/CSS which are always hand coded and Responsive. If you need a portfolio
+                                    for your work, a presentation page, or a landing page that can attract customers,
+                                    you are in the right place!</p>
+                                <br>
+                                <p>
+                                    My projects are well-structured, a code is clean, semantic and easy-to-maintain. I
+                                    am familiar with the latest front-end development trends and best practices, and I
+                                    constantly strive to stay up-to-date with the latest advancements in the field.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h5 class="center mb-20">Here are my main advantages:</h5><br>
+                                <p>✔️ clean, flexible, semantic code;</p>
+                                <p>✔️ should be responsive for any screen width up to 320px, for every pixel;</p>
+                                <p>✔️ compliance with the design should be close to Pixel Perfect. I check using app;</p>
+                                <p>✔️ no content duplication. Those. for mobile and desktop, the content should be the same, only changing with the help of media queries in CSS;</p>
+                                <p>✔️ should look the same on all browsers and operating systems;</p>
+                                <p>✔️ if I use Tailwind or Bootstrap - maximum use of the capabilities of the framework with its functionality and classes.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h5 class="center mb-20">My goal №1</h5><br>
+                                <p>My №1 goal will always be to meet your needs and deadline. When working on a new
+                                    project, I like to chat with the client, so that I can have a clear understanding of
+                                    his needs and vision of the project.<p\><br><br>
+                                <p>Get to know me better by looking at my recent work (in the portfolio section).</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__grid-steck">
+                <img src="img/Steck/1. Figma.png" alt="steck">
+                <img src="img/Steck/2. PSH.png" alt="steck">
+                <img src="img/Steck/3. VS Code.png" alt="steck">
+                <img src="img/Steck/4. HTML.png" alt="steck">
+                <img src="img/Steck/5. CSS.png" alt="steck">
+                <img src="img/Steck/6. JS.png" alt="steck">
+                <img src="img/Steck/7. Bootstrap.png" alt="steck">
+                <img src="img/Steck/8. Vue.png" alt="steck">
+                <img src="img/Steck/9. GIT.png" alt="steck">
+                <img src="img/Steck/10. FB.png" alt="steck">
+                <img src="img/Steck/11. Gulp.png" class="last" alt="steck">
+            </div>
+        </div>
+    </section>
+
+<!--     <section class="services" id="services">
         <div class="container">
             <h1 class="services__h">Services</h1>
             <div class="services__line"></div>
@@ -172,7 +237,7 @@
                     <li> - get a high-quality, adaptive website just in time.</li>
                 </ul>
             </div>
-    </section>
+    </section> -->
 
     <section class="parallax"></section>
 
@@ -180,13 +245,25 @@
         <div class="container">
             <h1 class="services__h">Portfolio</h1>
             <div class="services__line"></div>
+            <h3 class="services__h min_h">Web applications</h3>
+            <div class="services__line min-line"></div>
             <div class="portfolio__grig">
                 <div class="portfolio__grid-item">
-                    <a href="https://ovsyankinvi.github.io/007_02_VIP-Building/" class="portfolio__grid-item-a"><img
-                            src="img/Портфолио/Portfolio-1.png" class="portfolio__grid-item-img"></a>
-                    <h2 class="portfolio__grid-item-h2">VIP-Building</h2>
-                    <p class="portfolio__grid-item-p">Building company</p>
+                    <a href="https://ovi-home-finance.web.app" class="portfolio__grid-item-a"><img
+                            src="img/Портфолио/Portfolio-9.png" class="portfolio__grid-item-img"></a>
+                    <h2 class="portfolio__grid-item-h2">Home finans </h2>
+                    <p class="portfolio__grid-item-p">Your online accounting service</p>
                 </div>
+                <div class="portfolio__grid-item">
+                    <a href="https://ovsyankinvi.github.io/007_01_Type-of-temperament/" class="portfolio__grid-item-a"><img
+                            src="img/Портфолио/Portfolio-8.png" class="portfolio__grid-item-img"></a>
+                    <h2 class="portfolio__grid-item-h2">Type of temperament </h2>
+                    <p class="portfolio__grid-item-p">Temperament test</p>
+                </div>
+            </div>
+            <h3 class="services__h min_h">Single-page sites</h3>
+            <div class="services__line min-line"></div>
+            <div class="portfolio__grig">
                 <div class="portfolio__grid-item">
                     <a href="https://ovsyankinvi.github.io/007_03_Konstruct/" class="portfolio__grid-item-a"><img
                             src="img/Портфолио/Portfolio-2.png" class="portfolio__grid-item-img"></a>
@@ -223,12 +300,6 @@
                     <h2 class="portfolio__grid-item-h2">Dae</h2>
                     <p class="portfolio__grid-item-p">Online cosmetics store</p>
                 </div>
-                <div class="portfolio__grid-item">
-                    <a href="https://ovsyankinvi.github.io/007_01_Type-of-temperament/" class="portfolio__grid-item-a"><img
-                            src="img/Портфолио/Portfolio-8.png" class="portfolio__grid-item-img"></a>
-                    <h2 class="portfolio__grid-item-h2">Type of temperament </h2>
-                    <p class="portfolio__grid-item-p">Temperament test</p>
-                </div>
             </div>
         </div>
     </section>
@@ -243,10 +314,10 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/google-form.js"></script>
 </body>
 

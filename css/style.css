@@ -330,6 +330,86 @@ ul:not(.browser-default) {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+/* about */
+.about {
+    top: -30px;
+}
+.about__grid {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-top: 50px;
+    align-items: center;
+}
+.prlx {
+    top: -62px;
+}
+.about__grid-foto img {
+    border-radius: 50%;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 5px 5px 7px #9e9e9e;
+}
+.about__grid-steck {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.about__grid-steck img {
+    width: 65px;
+    padding-top: 20px;
+    transition: 0.4s;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.about__grid-steck img:hover {
+    width: 85px;
+    transition: 0.4s;
+    filter: drop-shadow(8px 8px 7px #9e9e9e);
+}
+.last {
+    margin-right: 0 !important;
+}
+.swiper {
+    max-width: 650px;
+    width: 100%;
+    height: 260px;
+}
+:root {
+    --swiper-theme-color: var(--color-green) !important;
+}
+@media screen and (max-width: 1000px) {
+    .about__grid {
+        display: block;
+    }
+    .about__grid-foto img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    .about__grid-steck {
+        grid-template-columns: repeat(6, 1fr);
+        height: 200px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .about__grid-steck {
+        grid-template-columns: repeat(4, 1fr);
+        height: 300px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .swiper {
+        height: 360px;
+    }
+}
+
 /* parallax */
 .parallax {
     background-image: url(../img/Paralax-img.png);
@@ -361,7 +441,7 @@ ul:not(.browser-default) {
     transition: all 1.5s;
 }
 .portfolio__grid-item:hover {
-    background-color: #dedede7f;
+
     transition: all 1s;
 }
 .portfolio__grid-item-img {
@@ -374,6 +454,7 @@ ul:not(.browser-default) {
     height: 154px;
     margin-bottom: 6px;
     transition: all 1s;
+    filter: drop-shadow(8px 8px 7px #666666);
 }
 .portfolio__grid-item-h2 {
     width: 100%;
@@ -385,6 +466,15 @@ ul:not(.browser-default) {
     text-align: center;
     color: #9e9e9e;
     padding-top: 5px;
+}
+.min_h {
+    font-size: 25px;
+    text-align: left;
+}
+.min-line {
+    height: 2px;
+    margin: 0;
+    width: 150px;
 }
 @media screen and (max-width: 950px){
     .portfolio__grig {

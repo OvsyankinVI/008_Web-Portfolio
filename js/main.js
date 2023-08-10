@@ -1,3 +1,14 @@
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 24,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
