@@ -457,7 +457,7 @@ ul:not(.browser-default) {
     filter: drop-shadow(8px 8px 7px #666666);
 }
 .portfolio__grid-item-h2 {
-    width: 100%;
+    margin-right: 10px;
     font-size: 24px;
     text-align: center;
 }
@@ -475,6 +475,14 @@ ul:not(.browser-default) {
     height: 2px;
     margin: 0;
     width: 150px;
+}
+.portfolio__grid-item-flex {
+    display: flex;
+    justify-content: center;
+}
+.git {
+    width: 25px;
+    height: 25px;
 }
 @media screen and (max-width: 950px){
     .portfolio__grig {
