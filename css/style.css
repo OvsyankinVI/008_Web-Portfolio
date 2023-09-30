@@ -356,7 +356,7 @@ ul:not(.browser-default) {
     display: block;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     justify-items: center;
     align-items: center;
 }
